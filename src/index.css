@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: #eeeeee;
+}
+
+:root {
+  --white-color: #fff;
+  --flex: flex;
+  --center: center;
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  background-color: #27a9e3;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  padding: 15px;
+  /* background: #2c3d63; */
+  transition: width 0.3s ease;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sidebar i {
+  font-size: 21px;
+  text-align: center;
+  flex: 1;
+
+  padding: 0.6rem 0.75rem;
+}
+
+/* sidebar opening */
+.sidebar.expanded {
+  width: 250px;
+  align-items: flex-start;
+}
+
+.sidebar.expanded i {
+  text-align: left;
+}
+
+/* toggle button */
+.toggle-btn {
+  width: 100%;
+  padding: 0.2rem 0;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: var(--white-color);
+  transition: background 0.3s ease;
+}
+
+.toggle-btn i {
+  font-size: 30px;
+  transition: transform 0.3s;
+  text-align: center;
+  padding: 0.175rem 0.75rem;
+}
+
+.toggle-btn:hover {
+  background: #1b3346;
+}
+
+.sidebar.sidebar.expanded .toggle-btn i {
+  transform: rotate(180deg);
+}
+
+/* logo */
+.sidebar-logo {
+  display: var(--flex);
+  align-items: var(--center);
+  margin-top: 3.5rem;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.sidebar .logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: none;
+}
+
+.sidebar.expanded .logo-text {
+  display: inline-block;
+  flex: 1.5;
+}
+
+/* menu */
+.menu {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.menu li {
+  margin: 1.5rem 0;
+}
+
+.menu a {
+  display: var(--flex);
+  align-items: var(--center);
+  color: var(--white-color);
+  text-decoration: none;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+.menu a span {
+  font-weight: 700;
+  display: none;
+}
+
+.menu a:hover {
+  background: #223e53;
+  border-radius: 5px;
+}
+
+.sidebar.expanded .menu a span {
+  display: inline-block;
+  flex: 1.5;
+}
+
+.sidebar {
+  transition: all 0.3s ease;
+}
+.sidebar.expanded {
+  width: 200px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.box-1 {
+  background-color: #27a9e3;
+}
+.box-2 {
+  background-color: #28b779;
+}
+.box-3 {
+  background-color: #ffb848;
+}
+.box-4 {
+  background-color: #da542e;
+}
