@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <title>movies hub</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <h1>login</h1>
 
-   
+<body>
+    <div class="showcase2" data-aos="fade-up" data-aos-duration="100">
+        <div class="showcase2-top">
+            <img src="/img/logo.png" class="img-fluid" alt="" />
+        </div>
+
+        <div class="container d-flex justify-content-center align-content-center">
+            <div class="container2">
+                <form class="form2" action="#">
+                    <h2 class="h2">Login-form</h2>
+                    <div class="input-field">
+                        <input type="text" required />
+                        <label>Enter email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required />
+                        <label>Enter password</label>
+                    </div>
+                    <div class="forget">
+                        <label for="Save-login">
+                            <input type="checkbox" id="Save-login" />
+                            <p>Save login information</p>
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <a href="/movies" class="border">
+                        <button type="submit">Log In</button>
+                    </a>
+                    <div class="Create-account">
+                        <p>Don't have an account? <a href="#">Create account</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- /* Support me */ -->
+        <a id="support" href="https://www.buymeacoffee.com/imstark202u" target="_blank"><img
+                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+                style="height: 60px !important;width: 217px !important;"></a>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </html>

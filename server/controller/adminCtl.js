@@ -5,3 +5,7 @@ module.exports.home = (req, res) => {
 module.exports.api = (req, res) => {
   res.json({ message: "Hello from Express backend!" });
 };
+
+module.exports.ui = (req, res) => {
+  res.render("index")
+};

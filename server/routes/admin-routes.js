@@ -6,4 +6,6 @@ const db = require("../config/db");
 
 routes.get("/", adminCtl.home);
 routes.get("/api", adminCtl.api);
+routes.get("/movies", adminCtl.ui);
+
 module.exports = routes;

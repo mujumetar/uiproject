@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(cors());
 app.use("/", require("./routes/admin-routes"));
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.listen(port, (err) => {
   if (err) {
